@@ -532,7 +532,6 @@ p { margin: 0 0 1em; }
   color: #2563eb;
   text-shadow: 0 0 18px rgba(37, 99, 235, 0.16);
 }
-}
 
 /* --- contact ------------------------------------------------------------ */
 .contact-veil {
@@ -555,7 +554,7 @@ p { margin: 0 0 1em; }
   position: relative;
   width: min(660px, 100%);
   padding: clamp(30px, 5vw, 58px);
-  text-align: left;
+  text-align: center;
   border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: 4px;
   background: linear-gradient(
@@ -575,8 +574,8 @@ p { margin: 0 0 1em; }
   display: block;
   width: 64px;
   height: 2px;
-  margin-bottom: 1.4em;
-  background: linear-gradient(90deg, var(--accent), rgba(255, 176, 102, 0));
+  margin: 0 auto 1.4em;
+  background: linear-gradient(90deg, rgba(255, 176, 102, 0), var(--accent), rgba(255, 176, 102, 0));
 }
 .contact-eyebrow {
   margin: 0 0 0.85em;
@@ -597,14 +596,18 @@ p { margin: 0 0 1em; }
 .contact-email {
   display: inline-block;
   color: #fdfdfc;
-  font-size: clamp(1.3rem, 3.2vw, 2.35rem);
+  max-width: 100%;
+  font-size: clamp(0.82rem, 2.5vw, 1.35rem);
   font-weight: 300;
   letter-spacing: -0.005em;
   text-decoration: none;
   padding-bottom: 8px;
   border-bottom: 1px solid rgba(255, 176, 102, 0.5);
   transition: color 0.3s ease, border-color 0.3s ease;
-  word-break: break-all;
+  /* The address is a single unbroken token — keep it on one line at every width. */
+  white-space: nowrap;
+  word-break: normal;
+  overflow-wrap: normal;
 }
 .contact-email:hover { color: var(--accent); border-color: var(--accent); }
 
@@ -612,6 +615,7 @@ p { margin: 0 0 1em; }
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
+  justify-content: center;
   margin-top: 2.1em;
 }
 .contact-foot {
