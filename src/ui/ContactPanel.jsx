@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 
-export const CONTACT_EMAIL = "saketh@vivensystems.com";
+export const CONTACT_EMAIL = "saketh.siripuram@vivensystems.com";
 
 /**
  * The contact moment. Rather than dropping a form over the scene, this holds
