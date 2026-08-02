@@ -37,7 +37,7 @@ export const OFFICES = [
     line: "Tell us what you are building. We will engineer it with you.",
     walker: "Exec3",
     // The tour is long, so the ask lands here rather than only at the very end.
-    cta: { label: "Start a project", href: "mailto:saketh@vivensystems.com" },
+    cta: { label: "Start a project", href: "mailto:saketh.siripuram@vivensystems.com" },
     // The CTA is the one thing on screen that can be clicked, so this stop
     // holds longer than the others to give it dwell time.
     hold: 9.5,
